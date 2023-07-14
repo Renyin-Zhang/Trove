@@ -6,7 +6,7 @@ Trove is a command-line utility written in C11 that is designed to build and sea
 ## Building the Project
 
 The project can be compiled using the provided Makefile:
-```bash
+```
 make
 ```
 
@@ -17,12 +17,12 @@ This will produce an executable called `trove`.
 Trove can be invoked in two ways:
 
 1. Search for a word in the indexed files:
-```bash
+```
 ./trove [-f trovefile] word
 ```
 
 2. Build, remove, or update an index:
-```bash
+```
 ./trove [-f trovefile] [-b  |  -r  |  -u] [-l length] filelist
 ```
 
@@ -37,8 +37,8 @@ Trove can be invoked in two ways:
 ## Trove-file Format
 
 * Filenames stored in the trove-file are absolute pathnames.
-* To reduce the size of the trove-file, each indexed word and each absolute filename should ideally be stored only once.
-* The trove-file may, but does not have to be, a text-file.
+* To reduce the size of the trove-file, each indexed word and each absolute filename is stored only once.
+* The trove-file is a text-file.
 
 ## Note
 The default name of the trove-file is /tmp/trove, and the default minimum length of each indexed word is 4. Each trove-file must be stored on, and read from, disk using the `/usr/bin/gzip` and `/usr/bin/zcat` utilities. Debug printing is allowed in your submitted program, but it should be indented with one or more space or tab characters.
