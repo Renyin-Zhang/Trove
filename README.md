@@ -41,4 +41,4 @@ Trove can be invoked in two ways:
 * The trove-file is a text-file.
 
 ## Note
-The default name of the trove-file is /tmp/trove, and the default minimum length of each indexed word is 4. Each trove-file must be stored on, and read from, disk using the `/usr/bin/gzip` and `/usr/bin/zcat` utilities. Debug printing is allowed in your submitted program, but it should be indented with one or more space or tab characters.
+The default name of the trove-file is /tmp/trove, and the default minimum length of each indexed word is 4. Each trove-file is stored on, and read from, disk using the `/usr/bin/gzip` and `/usr/bin/zcat` utilities.
